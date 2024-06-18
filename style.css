@@ -1,0 +1,38 @@
+.quadrado-sup-esq {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0%;
+    background-color: blue;
+    animation: direita 4s;
+    
+}
+
+@keyframes direita {
+    0% {
+        transform: translateX(0px);
+        background-color: blue
+        
+    }
+
+    25% {
+        transform: translateX(1600px);
+        background-color: red
+    }
+
+    50% {
+        transform: translateY(500px) translateX(1600px);
+        background-color: green;
+    }
+
+    75% {
+        transform: translateX(0px) translateY(500px);
+        background-color: yellow;
+    }
+
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
